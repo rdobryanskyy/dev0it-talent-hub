@@ -8,49 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 215 27% 17%;
+    --background: 0 0% 95%;
+    --foreground: 263 82% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 27% 17%;
+    --card: 263 65% 8%;
+    --card-foreground: 263 82% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 27% 17%;
+    --popover: 263 65% 8%;
+    --popover-foreground: 263 82% 95%;
 
-    --primary: 214 84% 56%;
+    --primary: 340 75% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 200 25% 95%;
-    --secondary-foreground: 215 27% 17%;
+    --secondary: 263 50% 15%;
+    --secondary-foreground: 263 82% 95%;
 
-    --muted: 200 25% 95%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 263 40% 20%;
+    --muted-foreground: 263 30% 65%;
 
-    --accent: 197 71% 73%;
-    --accent-foreground: 215 27% 17%;
+    --accent: 16 84% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 200 20% 90%;
-    --input: 200 20% 90%;
-    --ring: 214 84% 56%;
+    --border: 263 40% 25%;
+    --input: 263 40% 25%;
+    --ring: 340 75% 55%;
 
     --radius: 0.75rem;
 
-    /* Custom design tokens for dev0it */
-    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(197 71% 73%));
-    --gradient-hero: linear-gradient(135deg, hsl(214 84% 56%) 0%, hsl(197 71% 73%) 50%, hsl(180 77% 64%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(200 25% 97%) 100%);
+    /* dev0it brand colors */
+    --dev0it-bg: 263 82% 11%;
+    --dev0it-pink: 340 75% 55%;
+    --dev0it-orange: 16 84% 60%;
+    --dev0it-purple: 263 65% 8%;
+    --dev0it-accent: 263 40% 25%;
     
-    --tech-primary: 214 84% 56%;
-    --tech-secondary: 197 71% 73%;
-    --tech-accent: 180 77% 64%;
-    --tech-dark: 215 27% 17%;
-    --tech-light: 200 25% 95%;
+    /* Custom design tokens matching dev0it aesthetic */
+    --gradient-primary: linear-gradient(135deg, hsl(340 75% 55%), hsl(16 84% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(340 75% 55%) 0%, hsl(16 84% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(263 65% 8%) 0%, hsl(263 50% 12%) 100%);
     
-    --shadow-card: 0 4px 20px -2px hsl(214 84% 56% / 0.1);
-    --shadow-hero: 0 25px 50px -12px hsl(214 84% 56% / 0.25);
+    --shadow-card: 0 4px 20px -2px hsl(340 75% 55% / 0.15);
+    --shadow-hero: 0 25px 50px -12px hsl(340 75% 55% / 0.3);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -73,40 +74,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 215 27% 12%;
-    --foreground: 0 0% 98%;
+    --background: 263 82% 11%;
+    --foreground: 263 82% 95%;
 
-    --card: 215 27% 15%;
-    --card-foreground: 0 0% 98%;
+    --card: 263 65% 8%;
+    --card-foreground: 263 82% 95%;
 
-    --popover: 215 27% 15%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 263 65% 8%;
+    --popover-foreground: 263 82% 95%;
 
-    --primary: 214 84% 56%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 340 75% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 27% 20%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 263 50% 15%;
+    --secondary-foreground: 263 82% 95%;
 
-    --muted: 215 27% 20%;
-    --muted-foreground: 215 16% 65%;
+    --muted: 263 40% 20%;
+    --muted-foreground: 263 30% 65%;
 
-    --accent: 197 71% 73%;
-    --accent-foreground: 215 27% 12%;
+    --accent: 16 84% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 27% 20%;
-    --input: 215 27% 20%;
-    --ring: 214 84% 56%;
+    --border: 263 40% 25%;
+    --input: 263 40% 25%;
+    --ring: 340 75% 55%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(197 71% 73%));
-    --gradient-hero: linear-gradient(135deg, hsl(214 84% 56%) 0%, hsl(197 71% 73%) 50%, hsl(180 77% 64%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(215 27% 15%) 0%, hsl(215 27% 18%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(340 75% 55%), hsl(16 84% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(340 75% 55%) 0%, hsl(16 84% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(263 65% 8%) 0%, hsl(263 50% 12%) 100%);
     
-    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
-    --shadow-hero: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
+    --shadow-card: 0 4px 20px -2px hsl(340 75% 55% / 0.15);
+    --shadow-hero: 0 25px 50px -12px hsl(340 75% 55% / 0.3);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -125,5 +126,14 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Force dark theme to match dev0it branding */
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    background: hsl(263 82% 11%);
   }
 }

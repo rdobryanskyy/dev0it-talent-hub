@@ -33,15 +33,17 @@ const Hero = () => {
         {/* Main Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
           Unlimited
-          <span className="block bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Innovation
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <span className="bg-muted/40 px-2 py-1 rounded">Progressive</span> developers for{" "}
+          <span className="bg-muted/40 px-2 py-1 rounded">progressive</span> applications.
           Scalable and cutting-edge development solutions designed to help businesses 
-          unleash their potential and deliver exceptional digital experiences.
+          unleash their potential.
         </p>
 
         {/* Feature Pills */}
