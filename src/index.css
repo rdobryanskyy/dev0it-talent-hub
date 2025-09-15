@@ -8,50 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 95%;
-    --foreground: 263 82% 95%;
+    --background: 0 0% 98%;
+    --foreground: 264 15% 15%;
 
-    --card: 263 65% 8%;
-    --card-foreground: 263 82% 95%;
+    --card: 0 0% 100%;
+    --card-foreground: 264 15% 15%;
 
-    --popover: 263 65% 8%;
-    --popover-foreground: 263 82% 95%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 264 15% 15%;
 
-    --primary: 340 75% 55%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 264 15% 8%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 263 50% 15%;
-    --secondary-foreground: 263 82% 95%;
+    --secondary: 264 8% 92%;
+    --secondary-foreground: 264 15% 15%;
 
-    --muted: 263 40% 20%;
-    --muted-foreground: 263 30% 65%;
+    --muted: 264 5% 95%;
+    --muted-foreground: 264 8% 45%;
 
-    --accent: 16 84% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 220 60% 65%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 263 40% 25%;
-    --input: 263 40% 25%;
-    --ring: 340 75% 55%;
+    --border: 264 8% 88%;
+    --input: 264 8% 88%;
+    --ring: 264 15% 8%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* dev0it brand colors */
-    --dev0it-bg: 263 82% 11%;
-    --dev0it-pink: 340 75% 55%;
-    --dev0it-orange: 16 84% 60%;
-    --dev0it-purple: 263 65% 8%;
-    --dev0it-accent: 263 40% 25%;
+    /* dev0it brand colors - lighter theme */
+    --dev0it-main: 264 15% 8%;
+    --dev0it-light: 264 8% 92%;
+    --dev0it-accent: 220 60% 65%;
+    --dev0it-neutral: 264 5% 95%;
     
-    /* Custom design tokens matching dev0it aesthetic */
-    --gradient-primary: linear-gradient(135deg, hsl(340 75% 55%), hsl(16 84% 60%));
-    --gradient-hero: linear-gradient(135deg, hsl(340 75% 55%) 0%, hsl(16 84% 60%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(263 65% 8%) 0%, hsl(263 50% 12%) 100%);
+    /* Lighter design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(264 15% 8%), hsl(220 60% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(264 15% 8%) 0%, hsl(220 60% 65%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(264 5% 98%) 100%);
     
-    --shadow-card: 0 4px 20px -2px hsl(340 75% 55% / 0.15);
-    --shadow-hero: 0 25px 50px -12px hsl(340 75% 55% / 0.3);
+    --shadow-card: 0 4px 20px -2px hsl(264 15% 8% / 0.1);
+    --shadow-hero: 0 25px 50px -12px hsl(264 15% 8% / 0.15);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -128,12 +127,12 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 
-  /* Force dark theme to match dev0it branding */
+  /* Light theme by default */
   :root {
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   html {
-    background: hsl(263 82% 11%);
+    background: hsl(0 0% 98%);
   }
 }

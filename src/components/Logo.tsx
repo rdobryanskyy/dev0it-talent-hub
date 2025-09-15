@@ -7,9 +7,9 @@ const Logo = ({ className = "w-8 h-8" }: { className?: string }) => {
     >
       <defs>
         <linearGradient id="paint0_linear_2934_63" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#E91E63" />
-          <stop offset="50%" stopColor="#FF5722" />
-          <stop offset="100%" stopColor="#FF9800" />
+          <stop offset="0%" stopColor="hsl(264 15% 8%)" />
+          <stop offset="50%" stopColor="hsl(240 30% 45%)" />
+          <stop offset="100%" stopColor="hsl(220 60% 65%)" />
         </linearGradient>
       </defs>
       <path 
